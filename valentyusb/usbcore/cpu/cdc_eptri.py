@@ -188,6 +188,8 @@ class CDCUsbPHY(Module, AutoDoc, ModuleDoc):
         product,
         manufacturer):
 
+        ModuleDoc.__init__(self)
+
         # Create the eptri USB interface
         usb = TriEndpointInterface(iobuf, debug=debug)
         #usb.finalize()
